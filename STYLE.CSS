@@ -1,0 +1,123 @@
+@import 'https://fonts.googleapis.com/css?family=Jaldi';
+html,body{
+    padding:0;
+    margin:0;
+}
+p{
+    margin:5px;    
+}
+body {
+    font-family: 'Jaldi', sans-serif;
+    background-color:aqua;
+}
+main{
+    background-color:white;
+    border-radius:30px 30px 30px 30px;
+    width:90%;
+    margin:0 auto;
+}
+/* search window */
+.close{
+    background-color:red;
+    height:50px;
+    width:70px;
+    border-radius:30px;
+    text-align:center ;
+    line-height:45px;
+}
+.searchWindow{
+    z-index:3;
+    position:absolute;
+    background:rgba(50,50,50,0.9);
+    color:white;
+    font-size:2.2em;
+    width:inherit;
+    text-align:center;
+    height:80%;
+}
+input{
+    height:30px;
+    border-radius:10px;
+    font-size:.7em;
+    width:100px;
+}
+button{
+    height:50px;
+    width:70px;
+    border-radius:30px;
+    color:white;
+    background:#1ABC9C;
+    font-size:0.5em;
+}
+    
+
+/* weather window*/
+.tallrow{margin-top:10px;}
+.row{
+    border-radius:30px 30px 0 0;
+    background:linear-gradient(red,orange);
+    text-align:center ;
+    height:70px;
+    font-size:3em;
+    color:white;
+}
+.search{
+    background-color:yellowgreen;
+    height:40px;
+    width:70px;
+    border-radius:30px;
+    text-align:center ;
+    line-height:32px;
+    position:relative;
+    bottom:5%;
+    font-size:0.3em;
+}
+.round{background-color:yellowgreen;
+    border-radius:50%;
+    width:120px;
+    height:120px;
+    text-align:center ;
+    line-height:80px;
+    margin:0 auto;
+}
+#temperature{
+    font-size:4em;
+}
+.icon{
+    background-color:yellow;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    text-align:center ;
+    line-height:50px;
+    position:relative ;
+    top:-80px;
+    right:-50px;
+}
+.button{
+    background-image:linear-gradient(blue, aqua);
+    height:70px;
+    
+    text-align:center ;
+    color:white;
+    font-size:2.5em;
+    margin-top:-40px;
+}
+.firstButton{
+   border-radius:30px 30px; 
+}
+.secondButton{
+    border-radius:30px 30px; 
+}
+.smallround{
+  background-color:yellowgreen; 
+  text-align:center ;
+  position:relative ;
+  border-radius:50%;
+  height:50px;
+  width:50px;
+  color: white;
+  font-size:2.5em;
+  top:-20px;
+  line-height:50px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello You Weather!</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <div class="row"> hello there!<button class="search" onclick="showSearch()">Search</button></div>
+            
+            <!-- search window -->
+            <div id="s" class="searchWindow">
+                <p>latitude</p>
+                <input id="latitude">
+                <p>longitude</p>
+                <input id="longitude">
+                <br>
+                <button onclick="getWeather()">Search</button>
+                <button class="close" onclick="hideSearch()">close</button>
+            </div>
+            
+            
+            <!--weather window -->
+            <div class="tallrow">
+                <div class="round"><div id="temperature">xx<sup>o</sup></div></div><div id="icon" class="icon">#</div>
+            </div>
+            <div id="description" class="button firstButton">Weather</div>
+            <div class="smallround">in</div>
+            <div id="city" class="button secondButton">your city</div>
+
+            <script src="script.js"></script>
+        </main>
+    </body>
+</html>
