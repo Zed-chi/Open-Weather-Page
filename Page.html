@@ -2,33 +2,49 @@
 <html>
     <head>
         <title>Hello You Weather!</title>
+        <meta charset="utf-8">
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <main>
-            <div class="row"> hello there!<button class="search" onclick="showSearch()">Search</button></div>
+        <div class="container">
+            
+            <header>
+                <h4>hello there!</h4>
+                <button class="search" onclick="showSearch()">Let's See</button>
+            </header>
             
             <!-- search window -->
-            <div id="s" class="searchWindow">
+            
+            
+                <div id="searchWindow" >
                 <p>latitude</p>
-                <input id="latitude">
+                <input type="text" id="latitude">
                 <p>longitude</p>
-                <input id="longitude">
+                <input type="text" id="longitude">
                 <br>
                 <button onclick="getWeather()">Search</button>
                 <button class="close" onclick="hideSearch()">close</button>
-            </div>
-            
-            
+                <button class="findMe" onclick="getLocation()">find me</button>
+                </div>
+           
+ 
             <!--weather window -->
-            <div class="tallrow">
-                <div class="round"><div id="temperature">xx<sup>o</sup></div></div><div id="icon" class="icon">#</div>
-            </div>
-            <div id="description" class="button firstButton">Weather</div>
-            <div class="smallround">in</div>
-            <div id="city" class="button secondButton">your city</div>
 
-            <script src="script.js"></script>
-        </main>
+            <main>
+                <article>
+                    <div id="temperature">xx<sup>o</sup></div>
+                    <div id="icon">#</div>
+                </article>
+
+                <article>
+                    <div id="description" class="rounded">Weather</div>
+                    <div class="round">in</div>
+                    <div id="city" class="rounded">your city</div>  
+                </article>  
+            </main>
+
+        </div>
+    
+        <script src="script.js"></script>
     </body>
 </html>

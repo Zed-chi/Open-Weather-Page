@@ -1,6 +1,6 @@
 /* Geo Location */
-	var lat=0;
-	var lon=0;
+	var lat;
+	var lon;
 		function getLocation() {
 			if (navigator.geolocation) {
 				navigator.geolocation.getCurrentPosition(Coords);
@@ -12,16 +12,18 @@
 		function Coords(position){
 			lat=position.coords.latitude;
 			lon=position.coords.longitude;
+            document.getElementById("latitude").value=lat;
+            document.getElementById("longitude").value=lon;
 		}
 
 
 /*search window functions*/
 
     function showSearch(){
-        document.getElementById("s").style.visibility='visible';
+        document.getElementById("searchWindow").style.visibility='visible';
     }
     function hideSearch(){
-        document.getElementById("s").style.visibility='hidden';
+        document.getElementById("searchWindow").style.visibility='hidden';
     }
 
 /* Search for weather by coords given in inputs */

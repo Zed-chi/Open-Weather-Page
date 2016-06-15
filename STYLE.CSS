@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Jaldi';
-html,body{
+html,body,h4{
     padding:0;
     margin:0;
 }
@@ -10,13 +10,13 @@ body {
     font-family: 'Jaldi', sans-serif;
     background-color:aqua;
 }
-main{
+.container{
     background-color:white;
     border-radius:30px 30px 30px 30px;
-    width:90%;
+    max-width:700px;
     margin:0 auto;
 }
-/* search window */
+                                                /* search window */
 .close{
     background-color:red;
     height:50px;
@@ -25,13 +25,23 @@ main{
     text-align:center ;
     line-height:45px;
 }
-.searchWindow{
+.findMe{
+    background-color:orange;
+    height:50px;
+    width:90px;
+    border-radius:30px;
+    text-align:center ;
+    line-height:45px; 
+}
+#searchWindow{
+    max-width:700px;
+    margin:0 auto;
     z-index:3;
     position:absolute;
     background:rgba(50,50,50,0.9);
     color:white;
     font-size:2.2em;
-    width:inherit;
+    width:100%;
     text-align:center;
     height:80%;
 }
@@ -51,65 +61,64 @@ button{
 }
     
 
-/* weather window*/
-.tallrow{margin-top:10px;}
-.row{
+                                                    /* weather window*/
+
+
+header{
     border-radius:30px 30px 0 0;
     background:linear-gradient(red,orange);
-    text-align:center ;
+    text-align:left ;
+    padding-left: 60px;
     height:70px;
     font-size:3em;
     color:white;
 }
 .search{
     background-color:yellowgreen;
-    height:40px;
-    width:70px;
+    height:3em;
+    width:6em;
     border-radius:30px;
     text-align:center ;
     line-height:32px;
     position:relative;
-    bottom:5%;
+    bottom: 90px;
+    left:250px;
     font-size:0.3em;
-}
-.round{background-color:yellowgreen;
-    border-radius:50%;
-    width:120px;
-    height:120px;
-    text-align:center ;
-    line-height:80px;
-    margin:0 auto;
+    display: inline-block;
 }
 #temperature{
+    background-color:yellowgreen;
+    border-radius:50%;
+    width:2em;
+    height:2em;
+    text-align:center ;
+    line-height:1.8em;
+    margin:50px auto;
     font-size:4em;
+    color: white;
 }
-.icon{
+#icon{
     background-color:yellow;
-    height:50px;
-    width:50px;
+    height:4em;
+    width:4em;
     border-radius:50%;
     text-align:center ;
-    line-height:50px;
+    line-height:4em;
     position:relative ;
-    top:-80px;
-    right:-50px;
+    bottom:9em;
+    right:-4em;
 }
-.button{
+.rounded{
     background-image:linear-gradient(blue, aqua);
     height:70px;
-    
     text-align:center ;
     color:white;
     font-size:2.5em;
     margin-top:-40px;
+        border-radius:30px 30px; 
 }
-.firstButton{
-   border-radius:30px 30px; 
-}
-.secondButton{
-    border-radius:30px 30px; 
-}
-.smallround{
+
+.round{
   background-color:yellowgreen; 
   text-align:center ;
   position:relative ;
@@ -119,5 +128,6 @@ button{
   color: white;
   font-size:2.5em;
   top:-20px;
+  margin: 0 auto;
   line-height:50px;
 }
